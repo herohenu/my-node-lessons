@@ -1,0 +1,100 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'times',
+1 verbose cli   'momentjs' ]
+2 info using npm@1.3.10
+3 info using node@v0.10.25
+4 warn package.json lesson5@0.0.0 No repository field.
+5 warn package.json lesson5@0.0.0 No README data
+6 verbose readDependencies using package.json deps
+7 verbose cache add [ 'times', null ]
+8 verbose cache add name=undefined spec="times" args=["times",null]
+9 verbose parsed url { protocol: null,
+9 verbose parsed url   slashes: null,
+9 verbose parsed url   auth: null,
+9 verbose parsed url   host: null,
+9 verbose parsed url   port: null,
+9 verbose parsed url   hostname: null,
+9 verbose parsed url   hash: null,
+9 verbose parsed url   search: null,
+9 verbose parsed url   query: null,
+9 verbose parsed url   pathname: 'times',
+9 verbose parsed url   path: 'times',
+9 verbose parsed url   href: 'times' }
+10 verbose cache add [ 'momentjs', null ]
+11 verbose cache add name=undefined spec="momentjs" args=["momentjs",null]
+12 verbose parsed url { protocol: null,
+12 verbose parsed url   slashes: null,
+12 verbose parsed url   auth: null,
+12 verbose parsed url   host: null,
+12 verbose parsed url   port: null,
+12 verbose parsed url   hostname: null,
+12 verbose parsed url   hash: null,
+12 verbose parsed url   search: null,
+12 verbose parsed url   query: null,
+12 verbose parsed url   pathname: 'momentjs',
+12 verbose parsed url   path: 'momentjs',
+12 verbose parsed url   href: 'momentjs' }
+13 silly lockFile 7196b587-times times
+14 verbose lock times /home/fitark/.npm/7196b587-times.lock
+15 silly lockFile 6617700a-momentjs momentjs
+16 verbose lock momentjs /home/fitark/.npm/6617700a-momentjs.lock
+17 silly lockFile 7196b587-times times
+18 silly lockFile 7196b587-times times
+19 silly lockFile 6617700a-momentjs momentjs
+20 silly lockFile 6617700a-momentjs momentjs
+21 verbose addNamed [ 'times', '' ]
+22 verbose addNamed [ null, '*' ]
+23 silly lockFile 7a06f1b5-times times@
+24 verbose lock times@ /home/fitark/.npm/7a06f1b5-times.lock
+25 verbose addNamed [ 'momentjs', '' ]
+26 verbose addNamed [ null, '*' ]
+27 silly lockFile 04d76c48-momentjs momentjs@
+28 verbose lock momentjs@ /home/fitark/.npm/04d76c48-momentjs.lock
+29 silly addNameRange { name: 'times', range: '*', hasData: false }
+30 silly addNameRange { name: 'momentjs', range: '*', hasData: false }
+31 verbose url raw times
+32 verbose url resolving [ 'https://registry.npmjs.org/', './times' ]
+33 verbose url resolved https://registry.npmjs.org/times
+34 info trying registry request attempt 1 at 17:39:26
+35 http GET https://registry.npmjs.org/times
+36 verbose url raw momentjs
+37 verbose url resolving [ 'https://registry.npmjs.org/', './momentjs' ]
+38 verbose url resolved https://registry.npmjs.org/momentjs
+39 info trying registry request attempt 1 at 17:39:26
+40 http GET https://registry.npmjs.org/momentjs
+41 http 404 https://registry.npmjs.org/momentjs
+42 silly registry.get cb [ 404,
+42 silly registry.get   { 'content-type': 'application/json',
+42 silly registry.get     'cache-control': 'max-age=0',
+42 silly registry.get     'content-length': '2',
+42 silly registry.get     'accept-ranges': 'bytes',
+42 silly registry.get     date: 'Tue, 24 Nov 2015 09:39:30 GMT',
+42 silly registry.get     via: '1.1 varnish',
+42 silly registry.get     age: '0',
+42 silly registry.get     connection: 'keep-alive',
+42 silly registry.get     'x-served-by': 'cache-sjc3132-SJC',
+42 silly registry.get     'x-cache': 'MISS',
+42 silly registry.get     'x-cache-hits': '0',
+42 silly registry.get     'x-timer': 'S1448357970.800344,VS0,VE38' } ]
+43 silly addNameRange number 2 { name: 'momentjs', range: '*', hasData: true }
+44 silly addNameRange versions [ undefined, [] ]
+45 error TypeError: Cannot read property 'latest' of undefined
+45 error     at next (/usr/share/npm/lib/cache.js:687:35)
+45 error     at /usr/share/npm/lib/cache.js:675:5
+45 error     at saved (/usr/share/npm/node_modules/npm-registry-client/lib/get.js:142:7)
+45 error     at /usr/lib/nodejs/graceful-fs/polyfills.js:133:7
+45 error     at Object.oncomplete (fs.js:107:15)
+46 error If you need help, you may report this log at:
+46 error     <http://github.com/isaacs/npm/issues>
+46 error or email it to:
+46 error     <npm-@googlegroups.com>
+47 error System Linux 3.16.0-51-generic
+48 error command "/usr/bin/nodejs" "/usr/bin/npm" "install" "times" "momentjs"
+49 error cwd /home/fitark/nodelessons/lesson5
+50 error node -v v0.10.25
+51 error npm -v 1.3.10
+52 error type non_object_property_load
+53 verbose exit [ 1, true ]

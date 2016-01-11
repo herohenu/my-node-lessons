@@ -1,0 +1,17 @@
+{
+  "name": "lesson5",
+  "version": "0.0.0",
+  "description": "optional lesson4  ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "async"
+  ],
+  "author": "",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "async": "~1.5.0"
+  }
+}

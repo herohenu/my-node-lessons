@@ -2,6 +2,7 @@ var eventproxy = require('eventproxy');
 var superagent = require('superagent');
 var cheerio = require('cheerio');
 var url = require('url');
+var fs = require('fs');
 
 var cnodeUrl = 'https://cnodejs.org/';
 
@@ -10,7 +11,7 @@ superagent.get(cnodeUrl)
 		if (err){
 			return console.err("   err is :", err);
 		}
-		console.log(" now get url  ");
+		console.log(" now get url  ",cnodeUrl);
 		var topicUrls = [];
 		var $ = cheerio.load(res.text);
 
@@ -27,12 +28,13 @@ superagent.get(cnodeUrl)
 				var topicUrl = topicPair[0];
 				var topicHtml = topicPair[1];
 				var $ = cheerio.load(topicHtml);
-				return ({//topic_full_title
-					titile: $('.topic_full_title').text().trim(),
+				return ({
+					titile: $('.topic_full_title').text().trim(),//topic_full_title
 					href: topicUrl,
 					comment1: $('.reply_content').eq(0).text().trim()
 				});
 			});
+
 			console.log("final topics :\n", topics);
 
 		});
